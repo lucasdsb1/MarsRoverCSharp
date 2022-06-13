@@ -17,7 +17,7 @@ try
     var posicaoService = serviceProvider.GetService<IPosicaoService>();
     var roverService = serviceProvider.GetService<IRoverService>();
 
-    Console.WriteLine("Coordenadas superior-direita: (Formato aceito: 5 5)");
+    Console.WriteLine("Coordenadas: (Formato aceito: 5 5)");
     var plator = platorService?.ConverterParaPlator(Console.ReadLine() ?? string.Empty);
 
     Console.WriteLine("\nPosição inicial do Rover: (Formato aceito: 1 2 N)");
@@ -33,7 +33,6 @@ try
     rover = roverService?.ExecutarMovimentos(rover);
 
     Console.WriteLine($"\n{rover.Posicao.X} {rover.Posicao.Y} {rover.Posicao.Direcao}");
-
     Console.ReadKey();
 }
 catch (Exception ex)

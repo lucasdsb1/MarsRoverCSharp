@@ -15,7 +15,7 @@ public class MovimentoService : IMovimentoService
         }
         catch (Exception ex)
         {
-            var msg = !string.IsNullOrEmpty(ex.Message) ? ex.Message : "Tamanho da entrada inválido!";
+            var msg = !string.IsNullOrEmpty(ex.Message) ? ex.Message : "Entrada inválida!";
             throw new Exception(msg);
         }
     }

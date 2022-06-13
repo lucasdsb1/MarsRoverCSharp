@@ -16,26 +16,33 @@ public class RoverService : IRoverService
             MovimentoType.Frente => MoverParaFrente(rover),
             _ => current
         });
-
-        //É a mesma coisa que isso aqui
-        //return rover.Movimentos.Aggregate(rover, (current, comando) => comando.ToString() switch
-        //{
-        //    MovimentoType.Esquerda => VirarParaEsquerda(rover),
-        //    MovimentoType.Direita => VirarParaDireita(rover),
-        //    MovimentoType.Frente => MoverParaFrente(rover),
-        //    _ => current
-        //});
     }
 
     private static Rover VirarParaEsquerda(Rover rover)
     {
-        rover.Posicao.Direcao = char.Parse(MovimentoType.Esquerda);
+        rover.Posicao.Direcao = rover.Posicao.Direcao.ToString() switch
+        {
+            DirecaoType.Norte => char.Parse(DirecaoType.Oeste),
+            DirecaoType.Leste => char.Parse(DirecaoType.Norte),
+            DirecaoType.Sul => char.Parse(DirecaoType.Leste),
+            DirecaoType.Oeste => char.Parse(DirecaoType.Sul),
+            _ => rover.Posicao.Direcao
+        };
+
         return rover;
     }
     
     private static Rover VirarParaDireita(Rover rover)
     {
-        rover.Posicao.Direcao = char.Parse(MovimentoType.Direita);
+        rover.Posicao.Direcao = rover.Posicao.Direcao.ToString() switch
+        {
+            DirecaoType.Norte => char.Parse(DirecaoType.Leste),
+            DirecaoType.Leste => char.Parse(DirecaoType.Sul),
+            DirecaoType.Sul => char.Parse(DirecaoType.Oeste),
+            DirecaoType.Oeste => char.Parse(DirecaoType.Norte),
+            _ => rover.Posicao.Direcao
+        };
+
         return rover;
     }
 
