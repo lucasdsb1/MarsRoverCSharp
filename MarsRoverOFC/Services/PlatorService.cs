@@ -13,7 +13,7 @@ public class PlatorService : IPlatorService
 
             if (coordenadas.Length != 2)
             {
-                throw new Exception("Tamanho inválido");
+                throw new Exception();
             }
 
             Plator plator;
@@ -24,20 +24,19 @@ public class PlatorService : IPlatorService
             }
             else
             {
-                throw new Exception("Não foi possível converter a entrada para coordenadas!");
+                throw new Exception();
             }
 
             if (plator.X < 0 || plator.Y < 0)
             {
-                throw new Exception("Números negativos não são aceitos!");
+                throw new Exception();
             }
 
             return plator;
         }
-        catch (Exception ex)
+        catch (Exception)
         {
-            var msg = !string.IsNullOrEmpty(ex.Message) ? ex.Message : "Tamanho da entrada inválido!";
-            throw new Exception(msg);
+            throw new Exception("Não foi possível criar o Plator!");
         }
     }
 }
