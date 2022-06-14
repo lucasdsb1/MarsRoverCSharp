@@ -7,6 +7,7 @@ using TechTalk.SpecFlow;
 namespace MarsRoverOFC.Specs.StepDefinitions
 {
     [Binding]
+    [Scope(Tag = "plator")]
     public class PlatorStepDefinitions
     {
         private readonly PlatorService _platorService = new();

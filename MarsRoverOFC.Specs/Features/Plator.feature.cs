@@ -83,11 +83,11 @@ namespace MarsRoverOFC.Specs.Features
         [Xunit.SkippableFactAttribute(DisplayName="Create a valid plateau")]
         [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
         [Xunit.TraitAttribute("Description", "Create a valid plateau")]
-        [Xunit.TraitAttribute("Category", "pdsw")]
+        [Xunit.TraitAttribute("Category", "plator")]
         public virtual void CreateAValidPlateau()
         {
             string[] tagsOfScenario = new string[] {
-                    "pdsw"};
+                    "plator"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a valid plateau", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 6
@@ -126,12 +126,14 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Create a valid plateau 1")]
         [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
         [Xunit.TraitAttribute("Description", "Create a valid plateau 1")]
+        [Xunit.TraitAttribute("Category", "plator")]
         public virtual void CreateAValidPlateau1()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a valid plateau 1", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 11
+#line 12
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -151,13 +153,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 12
+#line 13
  testRunner.Given("i have entered \"0 0\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 13
+#line 14
  testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 14
+#line 15
  testRunner.Then("the result should be Plator { X = 0, Y = 0 }", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -167,12 +169,14 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 1")]
         [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
         [Xunit.TraitAttribute("Description", "Create a invalid plateau 1")]
+        [Xunit.TraitAttribute("Category", "plator")]
         public virtual void CreateAInvalidPlateau1()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 1", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 16
+#line 18
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -192,13 +196,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 17
+#line 19
  testRunner.Given("i have entered \"5 5 \" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 18
+#line 20
  testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 19
+#line 21
  testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -208,12 +212,14 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 2")]
         [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
         [Xunit.TraitAttribute("Description", "Create a invalid plateau 2")]
+        [Xunit.TraitAttribute("Category", "plator")]
         public virtual void CreateAInvalidPlateau2()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 2", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 21
+#line 24
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -233,13 +239,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 22
+#line 25
  testRunner.Given("i have entered \" 5 5 \" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 23
+#line 26
  testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 24
+#line 27
  testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -249,12 +255,14 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 3")]
         [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
         [Xunit.TraitAttribute("Description", "Create a invalid plateau 3")]
+        [Xunit.TraitAttribute("Category", "plator")]
         public virtual void CreateAInvalidPlateau3()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 3", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 26
+#line 30
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -274,13 +282,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 27
+#line 31
  testRunner.Given("i have entered \" 5 5\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 28
+#line 32
  testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 29
+#line 33
  testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -290,52 +298,13 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 4")]
         [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
         [Xunit.TraitAttribute("Description", "Create a invalid plateau 4")]
+        [Xunit.TraitAttribute("Category", "plator")]
         public virtual void CreateAInvalidPlateau4()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 4", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 31
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 32
- testRunner.Given("i have entered \"5\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 33
- testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 34
- testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 5")]
-        [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
-        [Xunit.TraitAttribute("Description", "Create a invalid plateau 5")]
-        public virtual void CreateAInvalidPlateau5()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 5", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 36
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -357,7 +326,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 37
- testRunner.Given("i have entered \"A B\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("i have entered \"5\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 38
  testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -369,15 +338,17 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 6")]
+        [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 5")]
         [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
-        [Xunit.TraitAttribute("Description", "Create a invalid plateau 6")]
-        public virtual void CreateAInvalidPlateau6()
+        [Xunit.TraitAttribute("Description", "Create a invalid plateau 5")]
+        [Xunit.TraitAttribute("Category", "plator")]
+        public virtual void CreateAInvalidPlateau5()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 6", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 41
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 5", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 42
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -397,13 +368,56 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 42
- testRunner.Given("i have entered \"A 5\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 43
- testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("i have entered \"A B\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 44
+ testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 45
+ testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 6")]
+        [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
+        [Xunit.TraitAttribute("Description", "Create a invalid plateau 6")]
+        [Xunit.TraitAttribute("Category", "plator")]
+        public virtual void CreateAInvalidPlateau6()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 6", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 48
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 49
+ testRunner.Given("i have entered \"A 5\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 50
+ testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 51
  testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -413,12 +427,14 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 7")]
         [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
         [Xunit.TraitAttribute("Description", "Create a invalid plateau 7")]
+        [Xunit.TraitAttribute("Category", "plator")]
         public virtual void CreateAInvalidPlateau7()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 7", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 46
+#line 54
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -438,13 +454,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 47
+#line 55
  testRunner.Given("i have entered \"5 B\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 48
+#line 56
  testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 49
+#line 57
  testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -454,12 +470,14 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 8")]
         [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
         [Xunit.TraitAttribute("Description", "Create a invalid plateau 8")]
+        [Xunit.TraitAttribute("Category", "plator")]
         public virtual void CreateAInvalidPlateau8()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 8", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 51
+#line 60
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -479,13 +497,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 52
+#line 61
  testRunner.Given("i have entered \"\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 53
+#line 62
  testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 54
+#line 63
  testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -495,93 +513,13 @@ this.ScenarioInitialize(scenarioInfo);
         [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 9")]
         [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
         [Xunit.TraitAttribute("Description", "Create a invalid plateau 9")]
+        [Xunit.TraitAttribute("Category", "plator")]
         public virtual void CreateAInvalidPlateau9()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 9", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 56
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 57
- testRunner.Given("i have entered \" \" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 58
- testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 59
- testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 10")]
-        [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
-        [Xunit.TraitAttribute("Description", "Create a invalid plateau 10")]
-        public virtual void CreateAInvalidPlateau10()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 10", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 61
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 62
- testRunner.Given("i have entered \"-1 0\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 63
- testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 64
- testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 11")]
-        [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
-        [Xunit.TraitAttribute("Description", "Create a invalid plateau 11")]
-        public virtual void CreateAInvalidPlateau11()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 11", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 66
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -603,7 +541,7 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 67
- testRunner.Given("i have entered \"-1 -1\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("i have entered \" \" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 68
  testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -615,15 +553,17 @@ this.ScenarioInitialize(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 12")]
+        [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 10")]
         [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
-        [Xunit.TraitAttribute("Description", "Create a invalid plateau 12")]
-        public virtual void CreateAInvalidPlateau12()
+        [Xunit.TraitAttribute("Description", "Create a invalid plateau 10")]
+        [Xunit.TraitAttribute("Category", "plator")]
+        public virtual void CreateAInvalidPlateau10()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 12", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 71
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 10", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 72
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -643,13 +583,99 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 72
- testRunner.Given("i have entered \"0 -1\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
 #line 73
- testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("i have entered \"-1 0\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 74
+ testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 75
+ testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 11")]
+        [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
+        [Xunit.TraitAttribute("Description", "Create a invalid plateau 11")]
+        [Xunit.TraitAttribute("Category", "plator")]
+        public virtual void CreateAInvalidPlateau11()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 11", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 78
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 79
+ testRunner.Given("i have entered \"-1 -1\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 80
+ testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 81
+ testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Create a invalid plateau 12")]
+        [Xunit.TraitAttribute("FeatureTitle", "Plateau")]
+        [Xunit.TraitAttribute("Description", "Create a invalid plateau 12")]
+        [Xunit.TraitAttribute("Category", "plator")]
+        public virtual void CreateAInvalidPlateau12()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "plator"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a invalid plateau 12", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 84
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 85
+ testRunner.Given("i have entered \"0 -1\" into the input line on console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 86
+ testRunner.When("i press enter the result is processed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 87
  testRunner.Then("the result should be \"Não foi possível criar o Plator!\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
