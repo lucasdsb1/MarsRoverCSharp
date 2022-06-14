@@ -7,34 +7,43 @@ using TechTalk.SpecFlow;
 namespace MarsRoverOFC.Specs.StepDefinitions
 {
     [Binding]
-    public class PlateauStepDefinitions
+    public class PlatorStepDefinitions
     {
         private readonly PlatorService _platorService = new();
-        private Plator _result;
+        private dynamic _result;
+        private string _input;
 
         [Given(@"i have entered ""([^""]*)"" into the input line on console")]
         public void GivenIHaveEnteredIntoTheInputLineOnConsole(string p0)
         {
-            var coordenadas = p0.Split(" ");
-
-            Assert.Equal(2, coordenadas.Length);
-            Assert.True((int.TryParse(coordenadas[0], out var x)));
-            Assert.True((int.TryParse(coordenadas[1], out var y)));
-            Assert.False(x < 0);
-            Assert.False(y < 0);
+            _input = p0;
         }
 
         [When(@"i press enter the result is processed")]
         public void WhenIPressEnterTheResultIsProcessed()
         {
-            _result = _platorService.ConverterParaPlator("5 5");
+            try
+            {
+                _result = _platorService.ConverterParaPlator(_input);
+            }
+            catch (Exception ex)
+            {
+                _result = ex;
+            }
         }
 
         [Then(@"the result should be Plator \{ X = (.*), Y = (.*) }")]
         public void ThenTheResultShouldBe(int p0, int p1)
         {
-            _result.Should().BeEquivalentTo(new Plator(p0, p1));
+            var plator = (Plator) _result;
+            plator.Should().BeEquivalentTo(new Plator(p0, p1));
         }
 
+        [Then(@"the result should be ""([^""]*)""")]
+        public void ThenTheResultShouldBe(string p0)
+        {
+            var ex = (Exception) _result;
+            Assert.Equal(ex.Message, p0);
+        }
     }
 }
